@@ -30,7 +30,7 @@ endfunction
 function! airline#load_theme(name)
   let g:airline_theme = a:name
   let inactive_colors = g:airline#themes#{g:airline_theme}#inactive "also lazy loads the theme
-  call airline#exec_highlight('airline_inactive', inactive_colors.mode)
+  "call airline#exec_highlight('airline_inactive', inactive_colors.mode)
   call airline#highlight(['normal'])
 endfunction
 
